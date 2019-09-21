@@ -57,3 +57,81 @@ INFO 2019-09-21 08:58:47,081 autoreload 217 /home/moluo/Desktop/luffyProject/luf
 INFO 2019-09-21 08:58:47,538 autoreload 597 Watching for file changes with StatReloader
 INFO 2019-09-21 08:59:14,425 autoreload 217 /home/moluo/Desktop/luffyProject/luffyapi/luffyapi/apps/home/models.py changed, reloading.
 INFO 2019-09-21 08:59:14,809 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 09:00:23,138 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 09:00:47,638 autoreload 217 /home/moluo/Desktop/luffyProject/luffyapi/luffyapi/apps/home/models.py changed, reloading.
+INFO 2019-09-21 09:00:48,051 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 09:06:55,400 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 09:18:24,898 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 09:18:35,930 basehttp 154 "GET /banner HTTP/1.1" 301 0
+ERROR 2019-09-21 09:18:36,051 log 228 Internal Server Error: /banner/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/rest_framework/generics.py", line 66, in get_queryset
+    % self.__class__.__name__
+AssertionError: 'ListAPIView' should either include a `queryset` attribute, or override the `get_queryset()` method.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/django/utils/module_loading.py", line 20, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'luffyapi.utils.exceptions' has no attribute 'custom_exception_handler'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/rest_framework/settings.py", line 177, in import_from_string
+    return import_string(val)
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/django/utils/module_loading.py", line 24, in import_string
+    ) from err
+ImportError: Module "luffyapi.utils.exceptions" does not define a "custom_exception_handler" attribute/class
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/rest_framework/views.py", line 459, in handle_exception
+    exception_handler = self.get_exception_handler()
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/rest_framework/views.py", line 298, in get_exception_handler
+    return self.settings.EXCEPTION_HANDLER
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/rest_framework/settings.py", line 220, in __getattr__
+    val = perform_import(val, attr)
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/rest_framework/settings.py", line 166, in perform_import
+    return import_from_string(val, setting_name)
+  File "/home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/rest_framework/settings.py", line 180, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'luffyapi.utils.exceptions.custom_exception_handler' for API setting 'EXCEPTION_HANDLER'. ImportError: Module "luffyapi.utils.exceptions" does not define a "custom_exception_handler" attribute/class.
+ERROR 2019-09-21 09:18:36,054 basehttp 154 "GET /banner/ HTTP/1.1" 500 132732
+INFO 2019-09-21 09:18:58,887 autoreload 217 /home/moluo/Desktop/luffyProject/luffyapi/luffyapi/apps/home/urls.py changed, reloading.
+INFO 2019-09-21 09:18:59,933 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 09:19:22,350 autoreload 217 /home/moluo/Desktop/luffyProject/luffyapi/luffyapi/apps/home/urls.py changed, reloading.
+INFO 2019-09-21 09:19:22,803 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 09:19:23,805 basehttp 154 "GET /banner/ HTTP/1.1" 200 5192
+INFO 2019-09-21 09:19:23,853 basehttp 154 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2019-09-21 09:19:23,854 basehttp 154 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2019-09-21 09:19:23,854 basehttp 154 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2019-09-21 09:19:23,862 basehttp 154 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2019-09-21 09:19:23,881 basehttp 154 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2019-09-21 09:19:23,884 basehttp 154 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2019-09-21 09:19:23,890 basehttp 154 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+INFO 2019-09-21 09:19:23,891 basehttp 154 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2019-09-21 09:19:23,891 basehttp 154 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2019-09-21 09:19:23,901 basehttp 154 "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+INFO 2019-09-21 09:19:23,924 basehttp 154 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2019-09-21 09:19:56,123 autoreload 597 Watching for file changes with StatReloader
