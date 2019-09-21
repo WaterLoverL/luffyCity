@@ -4,3 +4,15 @@ INFO 2019-09-21 06:31:33,491 autoreload 217 /home/moluo/Desktop/luffyProject/luf
 INFO 2019-09-21 06:31:33,892 autoreload 597 Watching for file changes with StatReloader
 INFO 2019-09-21 06:45:51,393 autoreload 217 /home/moluo/Desktop/luffyProject/luffyapi/luffyapi/settings/dev.py changed, reloading.
 INFO 2019-09-21 06:45:51,685 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 06:51:47,705 autoreload 217 /home/moluo/Desktop/luffyProject/luffyapi/luffyapi/settings/dev.py changed, reloading.
+INFO 2019-09-21 06:51:48,040 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 06:52:24,484 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 06:53:09,759 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 06:53:22,010 autoreload 217 /home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/django/db/backends/mysql/base.py changed, reloading.
+INFO 2019-09-21 06:53:22,352 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 06:53:28,219 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 06:53:34,561 autoreload 217 /home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/django/db/backends/mysql/operations.py changed, reloading.
+INFO 2019-09-21 06:53:34,866 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 06:53:48,513 autoreload 217 /home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/django/db/backends/mysql/operations.py changed, reloading.
+INFO 2019-09-21 06:53:48,794 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 06:53:56,642 autoreload 597 Watching for file changes with StatReloader
