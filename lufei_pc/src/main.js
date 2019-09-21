@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import settings from "./settings";
 
+
 Vue.config.productionTip = false;
 Vue.prototype.$settings = settings;
 
@@ -15,6 +16,12 @@ Vue.use(ElementUI);
 
 // 导入CSS初始化文件
 import "../static/css/reset.css";
+
+import axios from 'axios'; // 从node_modules目录中导入包
+// 允许ajax发送请求时附带cookie
+axios.defaults.withCredentials = false;
+
+Vue.prototype.$axios = axios;
 
 new Vue({
   el: '#app',
