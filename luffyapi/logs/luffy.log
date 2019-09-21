@@ -17,3 +17,43 @@ INFO 2019-09-21 06:53:48,513 autoreload 217 /home/moluo/.virtualenvs/luffycity/l
 INFO 2019-09-21 06:53:48,794 autoreload 597 Watching for file changes with StatReloader
 INFO 2019-09-21 06:53:56,642 autoreload 597 Watching for file changes with StatReloader
 INFO 2019-09-21 07:11:22,426 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 08:21:16,884 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 08:21:19,445 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2019-09-21 08:21:19,486 basehttp 154 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2019-09-21 08:21:19,621 basehttp 154 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2019-09-21 08:21:19,658 basehttp 154 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2019-09-21 08:21:19,659 basehttp 154 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+WARNING 2019-09-21 08:21:19,682 log 228 Not Found: /favicon.ico
+WARNING 2019-09-21 08:21:19,686 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 1974
+ERROR 2019-09-21 08:25:10,776 exception 77 Invalid HTTP_HOST header: 'api.luffycity.cn:8000'. You may need to add 'api.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-09-21 08:25:10,816 log 228 Bad Request: /
+WARNING 2019-09-21 08:25:10,816 basehttp 154 "GET / HTTP/1.1" 400 68914
+ERROR 2019-09-21 08:25:11,025 exception 77 Invalid HTTP_HOST header: 'api.luffycity.cn:8000'. You may need to add 'api.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-09-21 08:25:11,061 log 228 Bad Request: /favicon.ico
+WARNING 2019-09-21 08:25:11,061 basehttp 154 "GET /favicon.ico HTTP/1.1" 400 68999
+INFO 2019-09-21 08:26:02,586 autoreload 217 /home/moluo/Desktop/luffyProject/luffyapi/luffyapi/settings/dev.py changed, reloading.
+INFO 2019-09-21 08:26:02,976 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 08:26:03,615 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2019-09-21 08:26:03,630 basehttp 154 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2019-09-21 08:26:03,757 basehttp 154 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2019-09-21 08:26:03,767 basehttp 154 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2019-09-21 08:26:03,768 basehttp 154 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+WARNING 2019-09-21 08:26:03,777 log 228 Not Found: /favicon.ico
+WARNING 2019-09-21 08:26:03,778 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 1981
+INFO 2019-09-21 08:26:44,700 autoreload 217 /home/moluo/Desktop/luffyProject/luffyapi/luffyapi/settings/dev.py changed, reloading.
+INFO 2019-09-21 08:26:45,153 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 08:26:45,443 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2019-09-21 08:26:46,893 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2019-09-21 08:26:47,037 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2019-09-21 08:35:43,357 autoreload 217 /home/moluo/Desktop/luffyProject/luffyapi/luffyapi/settings/dev.py changed, reloading.
+INFO 2019-09-21 08:35:43,793 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 08:47:40,362 autoreload 217 /home/moluo/Desktop/luffyProject/luffyapi/luffyapi/settings/dev.py changed, reloading.
+INFO 2019-09-21 08:47:40,880 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 08:51:30,651 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 08:52:05,495 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 08:55:12,343 autoreload 217 /home/moluo/Desktop/luffyProject/luffyapi/luffyapi/apps/home/models.py changed, reloading.
+INFO 2019-09-21 08:55:12,656 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 08:58:47,081 autoreload 217 /home/moluo/Desktop/luffyProject/luffyapi/luffyapi/urls.py changed, reloading.
+INFO 2019-09-21 08:58:47,538 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 08:59:14,425 autoreload 217 /home/moluo/Desktop/luffyProject/luffyapi/luffyapi/apps/home/models.py changed, reloading.
+INFO 2019-09-21 08:59:14,809 autoreload 597 Watching for file changes with StatReloader

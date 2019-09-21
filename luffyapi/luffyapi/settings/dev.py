@@ -16,6 +16,11 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # BASE_DIR 就是项目主应用目录
 
+import sys
+sys.path.insert(0, os.path.join(BASE_DIR,"apps"))
+
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -25,7 +30,7 @@ SECRET_KEY = ')7!@+yalqe%-f&c^0#0*3a0n3tr6$mk@ml@x)xgc)(vodzs78%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['api.luffycity.cn','www.luffycity.cn']
 
 
 # Application definition
@@ -37,9 +42,28 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Third party APP
+    'corsheaders',
+    'rest_framework',
+
+    # First party APP
+    'home',
 ]
 
+# CORS组的配置信息
+CORS_ORIGIN_WHITELIST = (
+    'https://www.luffycity.cn:8080',
+)
+CORS_ALLOW_CREDENTIALS = False  # 允许ajax跨域请求时携带cookie
+
+
+
 MIDDLEWARE = [
+    # cors -headers middleware 配置
+    'corsheaders.middleware.CorsMiddleware',
+
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -130,6 +154,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,"static")
+]
+
+MEDIA_URL = "/media/"
+
+MEDIA_ROOT=os.path.join(BASE_DIR,"uploads")
+
+
 
 # 日志配置
 LOGGING = {
