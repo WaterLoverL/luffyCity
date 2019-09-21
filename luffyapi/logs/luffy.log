@@ -135,3 +135,7 @@ INFO 2019-09-21 09:19:23,891 basehttp 154 "GET /static/rest_framework/js/csrf.js
 INFO 2019-09-21 09:19:23,901 basehttp 154 "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
 INFO 2019-09-21 09:19:23,924 basehttp 154 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
 INFO 2019-09-21 09:19:56,123 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 09:24:37,121 autoreload 217 /home/moluo/Desktop/luffyProject/luffyapi/luffyapi/apps/home/urls.py changed, reloading.
+INFO 2019-09-21 09:24:37,712 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 09:25:59,316 autoreload 217 /home/moluo/Desktop/luffyProject/luffyapi/luffyapi/apps/home/views.py changed, reloading.
+INFO 2019-09-21 09:25:59,722 autoreload 597 Watching for file changes with StatReloader
