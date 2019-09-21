@@ -20,11 +20,16 @@ from django.urls import re_path
 from django.conf import settings
 from django.views.static import serve
 
+import xadmin
+xadmin.autodiscover()
 
+from xadmin.plugins import xversion
+xversion.register_models()
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path(r'xadmin/',xadmin.site.urls),
     re_path(r'media/(?P<path>.*)', serve, {"document_root": settings.MEDIA_ROOT}),
     path('', include('home.urls')),
+
 ]
