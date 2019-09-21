@@ -1,2 +1,6 @@
 INFO 2019-09-21 06:25:45,669 autoreload 597 Watching for file changes with StatReloader
 INFO 2019-09-21 06:26:49,919 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 06:31:33,491 autoreload 217 /home/moluo/Desktop/luffyProject/luffyapi/luffyapi/settings/dev.py changed, reloading.
+INFO 2019-09-21 06:31:33,892 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 06:45:51,393 autoreload 217 /home/moluo/Desktop/luffyProject/luffyapi/luffyapi/settings/dev.py changed, reloading.
+INFO 2019-09-21 06:45:51,685 autoreload 597 Watching for file changes with StatReloader
