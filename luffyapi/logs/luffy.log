@@ -16,3 +16,4 @@ INFO 2019-09-21 06:53:34,866 autoreload 597 Watching for file changes with StatR
 INFO 2019-09-21 06:53:48,513 autoreload 217 /home/moluo/.virtualenvs/luffycity/lib/python3.6/site-packages/django/db/backends/mysql/operations.py changed, reloading.
 INFO 2019-09-21 06:53:48,794 autoreload 597 Watching for file changes with StatReloader
 INFO 2019-09-21 06:53:56,642 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-21 07:11:22,426 autoreload 597 Watching for file changes with StatReloader
