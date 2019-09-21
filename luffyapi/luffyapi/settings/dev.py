@@ -14,7 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+# BASE_DIR 就是项目主应用目录
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -118,3 +118,63 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# 日志配置
+LOGGING = {
+    'version': 1,     # python 团队开发的日志管理功能,这是版本号
+    'disable_existing_loggers': False,  # 是否禁用其他日志管理功能,False为不禁用.
+    #日志的格式说明
+    'formatters': {
+        'verbose': {   # 详细格式
+            'format': '%(levelname)s %(asctime)s %(module)s %(lineno)d %(message)s'
+                # level name 为日志等级
+                # 一共有5种   DEBUG INFO WARNING  ERROR CRITICAL
+                # asctime  日志发生异常输出内容的时间
+                # 他是一个时间戳
+                # model # python 里面的模块
+                # lineno
+                # 行号 第几行
+                # message 就是普通异常信息
+        },
+        'simple': {    # 简单格式
+            'format': '%(levelname)s %(module)s %(lineno)d %(message)s'
+        },
+    },
+    #日志的过滤信息
+    'filters': {
+    #日志调试下
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
+    #日志的处理方式
+    'handlers': {
+        # 调试终端
+        'console': {
+            'level': 'DEBUG',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+        # 日志输送到文件当中
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            # 日志位置,日志文件名,日志保存目录必须手动创建
+            'filename': os.path.join(os.path.dirname(BASE_DIR), "logs/luffy.log"),
+            # 日志文件的最大值,这里我们设置300M
+            'maxBytes': 300 * 1024 * 1024,
+            # 日志文件的数量,设置最大日志数量为10
+            'backupCount': 10,
+            # 日志格式:详细格式
+            'formatter': 'verbose'
+        },
+    },
+    # 日志对象
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],
+            'propagate': True, #是否让日志信息继续冒泡给其他的日志处理系统
+        },
+    }
+}
